@@ -9,7 +9,7 @@ Originally created by user **jordivn** on the Direct Admin forum:
 https://forum.directadmin.com/showthread.php?t=43924&page=22&p=278112#post278112
 
 ## Updated
-By bdacus01 using newer GO version of Directslave 3.3.  
+By regularguy01 using newer GO version of Directslave 3.3.  
 
 ## Aims
 
