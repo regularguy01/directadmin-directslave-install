@@ -1,6 +1,6 @@
 #!/bin/sh
 # @author jordavin,phillcoxon,mantas15
-# @updated by Brent Dacus
+# @updated by The Regular Guy
 # @date 04.06.2023
 # @version 1.0.5
 # @source
