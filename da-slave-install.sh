@@ -1,8 +1,8 @@
 #!/bin/sh
 # @author jordavin,phillcoxon,mantas15
 # @updated by Brent Dacus
-# @date 01.01.2021
-# @version 1.0.4
+# @date 04.06.2023
+# @version 1.0.5
 # @source
 # ------------------------------------------------------------------------------
 # -----------------------------------#
@@ -29,11 +29,11 @@ else
 fi
 #What Distro are you on?
 printf "Distro are you on??\n" 2>&1
-if [ "${OS}" = "CentOS" ]; then
+if [ "${OS}" = "AlmaLinux" ] || [ "${OS}" = "Rocky" ]; then
 	echo "System runs on "${OS}" "${VN}". Checking Continue on...."
 	mkdir -p "${builddir}"
 else
-	[ "${VN}" != "7.*" ]
+	[ "${VN}" != "8.*" ]
 	elseif
 	echo "System runs on  unsupported Linux. Exiting..."
 	exit
@@ -85,8 +85,8 @@ systemctl restart sshd
 
 echo "installing and configuring directslave"
 cd ~
-wget -q https://directslave.com/download/directslave-3.4.1-advanced-all.tar.gz >>${logfile}
-tar -xf directslave-3.4.1-advanced-all.tar.gz
+wget -q https://directslave.com/download/directslave-3.4.4-advanced-all.tar.gz >>${logfile}
+tar -xf directslave-3.4.4-advanced-all.tar.gz
 mv directslave /usr/local/
 cd /usr/local/directslave/bin
 mv directslave-linux-amd64 directslave
